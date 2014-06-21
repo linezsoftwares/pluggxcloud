@@ -1,0 +1,37 @@
+<h1>Listing controls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cid</th>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Installation type</th>
+      <th>Usage time</th>
+      <th>Activity count</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @controls.each do |control| %>
+      <tr>
+        <td><%= control.cid %></td>
+        <td><%= control.name %></td>
+        <td><%= control.type %></td>
+        <td><%= control.status %></td>
+        <td><%= control.installation_type %></td>
+        <td><%= control.usage_time %></td>
+        <td><%= control.activity_count %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= link_to 'New Controls', new_device_control_path(@device) %>
+<br>
+
+

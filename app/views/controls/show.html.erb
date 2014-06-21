@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cid:</strong>
+  <%= @control.cid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @control.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @control.type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @control.status %>
+</p>
+
+<p>
+  <strong>Installation type:</strong>
+  <%= @control.installation_type %>
+</p>
+
+<p>
+  <strong>Usage time:</strong>
+  <%= @control.usage_time %>
+</p>
+
+<p>
+  <strong>Activity count:</strong>
+  <%= @control.activity_count %>
+</p>
+
+<%= link_to 'Edit', edit_device_control_path(@device,@control) %> 
+<%= link_to 'Back', device_controls_path %>

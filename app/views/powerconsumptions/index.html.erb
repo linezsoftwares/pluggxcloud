@@ -1,0 +1,29 @@
+<h1>Listing powerconsumptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Data</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @powerconsumptions.each do |powerconsumption| %>
+      <tr>
+        <td><%= powerconsumption.day %></td>
+        <td><%= powerconsumption.data %></td>
+        <td><%= link_to 'Show', powerconsumption %></td>
+        <td><%= link_to 'Edit', edit_powerconsumption_path(powerconsumption) %></td>
+        <td><%= link_to 'Destroy', powerconsumption, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Powerconsumption', new_powerconsumption_path %>

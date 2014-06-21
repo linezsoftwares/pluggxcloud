@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hid: MyString
+  fwversion: MyString
+  hwversion: MyString
+  moduleinfo: MyString
+  name: MyString
+
+two:
+  hid: MyString
+  fwversion: MyString
+  hwversion: MyString
+  moduleinfo: MyString
+  name: MyString

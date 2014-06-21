@@ -1,0 +1,25 @@
+<%= form_for(@powerconsumption) do |f| %>
+  <% if @powerconsumption.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@powerconsumption.errors.count, "error") %> prohibited this powerconsumption from being saved:</h2>
+
+      <ul>
+      <% @powerconsumption.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :day %><br>
+    <%= f.number_field :day %>
+  </div>
+  <div class="field">
+    <%= f.label :data %><br>
+    <%= f.text_field :data %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

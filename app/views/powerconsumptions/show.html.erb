@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @powerconsumption.day %>
+</p>
+
+<p>
+  <strong>Data:</strong>
+  <%= @powerconsumption.data %>
+</p>
+
+<%= link_to 'Edit', edit_powerconsumption_path(@powerconsumption) %> |
+<%= link_to 'Back', powerconsumptions_path %>

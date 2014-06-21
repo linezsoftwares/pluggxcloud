@@ -1,0 +1,37 @@
+<%= form_for(@alarm) do |f| %>
+  <% if @alarm.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alarm.errors.count, "error") %> prohibited this alarm from being saved:</h2>
+
+      <ul>
+      <% @alarm.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :enabled %><br>
+    <%= f.text_field :enabled %>
+  </div>
+  <div class="field">
+    <%= f.label :days %><br>
+    <%= f.text_field :days %>
+  </div>
+  <div class="field">
+    <%= f.label :start %><br>
+    <%= f.number_field :start %>
+  </div>
+  <div class="field">
+    <%= f.label :stop %><br>
+    <%= f.number_field :stop %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  enabled: MyString
+  days: MyString
+  start: 1
+  stop: 1
+
+two:
+  name: MyString
+  enabled: MyString
+  days: MyString
+  start: 1
+  stop: 1

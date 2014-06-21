@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cid: MyString
+  name: 
+  type: 
+  status: MyString
+  installation_type: 1
+  usage_time: 1
+  activity_count: 1
+
+two:
+  cid: MyString
+  name: 
+  type: 
+  status: MyString
+  installation_type: 1
+  usage_time: 1
+  activity_count: 1

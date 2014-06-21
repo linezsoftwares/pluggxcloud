@@ -1,0 +1,35 @@
+<h1>Listing devices</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hid</th>
+      <th>Fwversion</th>
+      <th>Hwversion</th>
+      <th>Moduleinfo</th>
+      <th>Name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @devices.each do |device| %>
+      <tr>
+        <td><%= device.hid %></td>
+        <td><%= device.fwversion %></td>
+        <td><%= device.hwversion %></td>
+        <td><%= device.moduleinfo %></td>
+        <td><%= device.name %></td>
+        <td><%= link_to 'Show', device %></td>
+        <td><%= link_to 'Edit', edit_device_path(device) %></td>
+        <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Device', new_device_path %>

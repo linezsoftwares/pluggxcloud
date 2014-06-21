@@ -1,0 +1,35 @@
+<%= form_for([@device, @control])  do |f| %>
+ 
+
+  <div class="field">
+    <%= f.label :cid %><br>
+    <%= f.text_field :cid %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :installation_type %><br>
+    <%= f.number_field :installation_type %>
+  </div>
+  <div class="field">
+    <%= f.label :usage_time %><br>
+    <%= f.number_field :usage_time %>
+  </div>
+  <div class="field">
+    <%= f.label :activity_count %><br>
+    <%= f.number_field :activity_count %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
